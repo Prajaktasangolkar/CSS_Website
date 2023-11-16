@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Apply CSS styles */
+        body {
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(to bottom, #a2a7e4, #e781c3);
+            /* Background gradient */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            /* Example background color */
+            color: #fff;
+            /* Example text color */
+            text-align: center;
+        }
+
+        /* Center header content using flexbox */
+        .header-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home {
+            position: absolute;
+            left: 20px;
+        }
+
+        .home-link {
+            background-color: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* Add the arrow icon */
+        .home-link::after {
+
+            content: "→";
+            /* Unicode arrow character (you can customize this) */
+            margin-left: 5px;
+            font-size: 24px;
+            /* Adjust the size as needed */
+        }
+
+        h1 {
+            font-family: "Times New Roman", serif;
+            /* Font family for the header */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .restaurant-info,
+        .speciality,
+        .discounts {
+            font-family: cursive;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: fantasy;
+            /* Font family for section headings */
+            text-align: center;
+        }
+
+        table {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Add any additional styling effects as desired */
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- This is header  -->
+        <div class="header-content">
+            <h1>The Code Kitchen</h1>
+            <a id='home' href="home.html" class="home-link">Home</a>
+        </div>
+    </header>
+    <!-- Thois is section heading -->
+    <div class="all">
+        <h1 class="heading">About Us</h1>
+        <main>
+            <!-- section 1: restaurant-info -->
+            <section class="restaurant-info">
+                <h2>Our Story</h2>
+                <p>Welcome to our restaurant, a place where culinary magic happens. We have been serving delicious meals
+                    to our customers since 2005, and we take pride in our exceptional service and unique flavors. Our
+                    journey started with a passion for food and a commitment to creating memorable dining experiences.
+                    Over the years, we have become a beloved culinary destination in the community, known for our
+                    commitment to quality and innovation. Our team of expert chefs and dedicated staff work tirelessly
+                    to ensure your dining experience is nothing short of exceptional.</p>
+            </section>
+            <!-- Section 2: speciality -->
+            <section class="speciality">
+                <h2>Our Speciality</h2>
+                <p>Our speciality is our fusion cuisine, where we blend traditional flavors with modern cooking
+                    techniques to create dishes that tantalize your taste buds. Whether it's our signature pasta dishes,
+                    exotic seafood creations, or mouthwatering desserts, you'll find something extraordinary here. Our
+                    chefs are passionate about experimenting with flavors and ingredients to bring you unique and
+                    memorable dishes. From our innovative sushi rolls to our perfectly grilled steaks, we aim to provide
+                    a diverse and delightful menu that caters to a wide range of tastes. Join us for a culinary journey
+                    that will leave you craving for more</p>
+            </section>
+            <!-- Section 3: discounts table  -->
+            <section class="discounts">
+                <h2>Special Discounts</h2>
+                <table>
+                    <tr>
+                        <th>Discount Type</th>
+                        <th>Discount Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Happy Hour</td>
+                        <td>20% off on drinks</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch Special</td>
+                        <td>10% off on all lunch items</td>
+                    </tr>
+                    <tr>
+                        <td>Family Dinner</td>
+                        <td>Get a free dessert with every family dinner order</td>
+                    </tr>
+                    <tr>
+                        <td>Weekend Brunch</td>
+                        <td>15% off on brunch items</td>
+                    </tr>
+                    <tr>
+                        <td>Student Discount</td>
+                        <td>10% off with valid student ID</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Discount</td>
+                        <td>12% off for seniors aged 60+</td>
+                    </tr>
+                </table>
+
+            </section>
+        </main>
+    </div>
+    </div>
+</body>
+
+</html>

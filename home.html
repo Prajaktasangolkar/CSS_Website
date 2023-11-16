@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Code Kitchen</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the header */
+        header {
+
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .all {
+
+            height: 100vh;
+            background-image: url('https://png.pngtree.com/back_origin_pic/03/91/31/216a8c258305188af56217c3b58b99c5.jpg');
+            background-repeat: no-repeat;
+        }
+
+        /* Style the navigation menu */
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Helvetica', sans-serif;
+            transition: color 0.3s;
+        }
+
+
+        .button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Helvetica', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #7b2974;
+        }
+
+        /* Style the main content sections */
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+
+        /* Style the footer */
+
+
+
+       /*this css for animated css*/
+        
+        .body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body h1 {
+            font-family: "Montserrat Medium";
+            max-width: 40ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+        /*this is animatation for the test css*/
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(9) {
+            animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(10) {
+            animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(11) {
+            animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(12) {
+            animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(13) {
+            animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(14) {
+            animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(15) {
+            animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(16) {
+            animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(17) {
+            animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(18) {
+            animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <!-- This is header  -->
+        <header>
+            <h1 style="text-align:center; justify-content:center;">The Code Kitchen</h1>
+        </header>
+       <!-- Navbar  -->
+        <nav>
+            <br><br><br>
+            <ul>
+                <li><a href="menu.html" class="button">Our Menu</a></li>
+                <li><a href="contact.html" class="button">Contact Us</a></li>
+                <li><a href="about.html" class="button">About Us</a></li>
+            </ul>
+        </nav>
+        <main>
+        <!-- Section 1 is started here the logo and animated css is present -->
+            <section class="intro">
+
+                <img src="lr.png" alt="" height="200px">
+                <br> <br>
+                <div class="body">
+
+                    <h1>
+                        <span>Food</span>
+                        <span>That</span>
+                        <span>Speaks</span>
+                        <span>To</span>
+                        <span>The</span>
+                        <span>Soul</span>
+                        <span>Food,</span>
+                        <span>Love,</span>
+                        <span>Magic</span>
+
+
+                    </h1>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

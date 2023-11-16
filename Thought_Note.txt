@@ -1,0 +1,31 @@
+Home page:
+•	Use different font families from google fonts
+•	Use logo of website make in canva
+•	Then in the slogan use css animation  so that text will appear in transition form 
+•	Use hover effect on the button
+•	Use background image
+
+Our Menu:
+•	Use different font families
+•	The link of home page to go back is there
+•	Three section like Breakfast,Lunch,dinner
+•	Use grid and flex 
+•	Hover on tha button name
+•	Linera gradient use 
+•	Background image is used
+
+Contact us:
+•	Tnput of name,email,phone no
+•	The link of home page to go back is there
+•	Use background image 
+•	Hover effect on submit button
+
+About us:
+•	Use different font family
+•	The link of home page to go back is there
+•	There are 3 different section
+•	Use table for showing discount
+•	Liner agradient in background
+
+
+

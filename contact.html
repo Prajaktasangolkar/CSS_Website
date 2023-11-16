@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Kitchen</title>
+    <style>
+        body {
+            background-color: #fffbed;
+        }
+
+        h1 {
+            text-shadow: 1px 1.5px black;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100vh;
+        }
+
+        .header-content h1 {
+            margin: 0px 0px 0px 0px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .all {
+            background-image: url('https://smallboxenergy.com/wp-content/uploads/2017/10/AdobeStock_100927429-1024x683.jpeg');
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .heading {
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+            text-shadow: 1px 1px black;
+        }
+
+        .heading {
+            background-color: #cb202d;
+            color: #ffffff;
+
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        /* Apply styles to the header and center the text */
+
+        .heading>h3 {
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 5px;
+        }
+
+        .heading h1 {
+
+            background-color: #c6c455;
+
+        }
+
+        /* Apply styles to the header and center the text */
+        header {
+            background-color: #333;
+            /* Example background color */
+            color: #fff;
+            /* Example text color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Center header content using flexbox */
+        .header-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home {
+            position: absolute;
+            left: 20px;
+        }
+
+
+        /* Style the home link */
+        .home-link {
+            background-color: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* Add the arrow icon */
+        .home-link::after {
+
+            content: "→";
+            /* Unicode arrow character (you can customize this) */
+            margin-left: 5px;
+            font-size: 24px;
+            /* Adjust the size as needed */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        #country,
+        textarea {
+            font-family: cursive;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #2173cb;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            justify-content: center;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input[type="submit"]:hover {
+
+            background-color: #d4104b;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-family: 'Verdana', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <!-- This is header  -->
+
+    <header>
+        <div class="header-content">
+            <h1>The Code Kitchen</h1>
+            <a id='home' href="home.html" class="home-link">Home</a>
+        </div>
+    </header>
+    <!-- Contact us section has been started -->
+    <div class="all">
+        <h1 class="heading">Contact Us</h1>
+        <!-- The form contact following input types -->
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <br><br>
+        <br>
+
+        <!-- last section is footer -->
+        <!-- main : Footer is added  -->
+        <footer>
+            <p>&copy; 2023 The Code Kitchen. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
